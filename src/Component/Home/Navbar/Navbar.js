@@ -42,9 +42,7 @@ const Navvbar = () => {
             <li>
               <NavLink to="/about">ABOUT</NavLink>
             </li>
-            <li>
-              <NavLink to="/*">CONNECT WALLET</NavLink>
-            </li>
+           
           </ul>
         </div>
 

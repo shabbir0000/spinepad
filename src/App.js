@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Home from './Home';
-import About from './About';
-import Project from './Project';
-import Stack from './Stack';
-import Footer from './Footer'
+import Navbar from "../src/Component/Home/Navbar/Navbar";
+import Home from '../src/Component/Home/HomeALL/Home';
+import About from '../src/Component/Home/HomeALL/About';
+import Project from '../src/Component/Project/Project';
+import Stack from '../src/Component/Stacking/Stack';
+import Footer from '../src/Component/Home/Footer/Footer';
 import { Route, Routes } from "react-router-dom";
 
 

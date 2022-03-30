@@ -5,7 +5,7 @@ import { Card, Button } from 'react-bootstrap';
 import Cardstrct from './Cardstrct'
 import Cards from './Card'
 import img from './gfx-e.png'
-import img2 from './assets/img/clients/bluezilla.png'
+// import img2 from './assets/img/clients/bluezilla.png'
 
 function ncard(val) {
   return (
@@ -54,7 +54,7 @@ const Home = () => {
         ABOUT US
       </h1>
       <div className='about-div'>
-        <p className="about-us1">
+        <p className=" sm:grid sm:grid-cols-1 sm:justify-items-center about-us1">
 
           <b>
             WHAT IS BSCPAD?
@@ -75,9 +75,9 @@ const Home = () => {
           The hallmark of the BSCPad is a two-round system that makes every tier level guaranteed an allocation. There is no first come first serve or bots; only fair distributed rewards for all participants.
 
         </p>
-        <div className="loader"></div>
+        <div className="loader sm:hidden md:hidden"></div>
 
-      </div> 
+      </div>
       <h1 className="grid grid-cols-1 justify-items-center py-2">
         THE BSCPAD TIERED SYSTEM
       </h1>
@@ -86,13 +86,14 @@ const Home = () => {
           BSCPad will showcase a fixed tier system based on the number of tokens staked. Lottery Tiers will share 20% of total raise and rest 80% of the raise is assigned for guaranteed allocation tiers based on the pool weights assigned
         </p>
       </div>
-      <h1 className="flex justify-center py-5 text-2xl">
+
+      {/* <h1 className="flex justify-center py-5 text-2xl">
         ROUND 1 - ALLOCATION ROUND
       </h1>
 
       {/* <div className='round-div'>
         {Cards.map(ncard)}
-      </div> */}
+      </div> */} 
 
 
       <h1 className='system-us'>
@@ -114,13 +115,13 @@ const Home = () => {
 
       </div>
 
-      <h1 className="grid grid-cols-1 justify-items-center text-lg">
+      <h1 className="grid grid-cols-1 justify-items-center text-lg sm:text-3xl sm:py-10">
         INCUBATOR AND INVESTMENT PARTNER
       </h1>
       {/* <div className='card2-grid'>
         <div className='card2-grid-divider'> */}
 
-      <div className="grid grid-cols-1 justify-items-center space-y-10 mt-20 " >
+      <div className="grid grid-cols-1 justify-items-center space-y-10 mt-20 sm:grid sm:grid-cols-3" >
         <Card className=" max-w-sm ">
           <Card.Img variant="top" src={img} />
           <Card.Body>
@@ -156,19 +157,14 @@ const Home = () => {
             <Button variant="primary">Go somewhere</Button>
           </Card.Body>
         </Card>
-
-
-        <div >
-          <div className="loader1">
-          </div>
-        </div>
-
-
       </div>
 
+      <div className="grid grid-cols-1 justify-items-center p-10 sm:grid sm:grid-cols-1 sm:justify-items-center">
+        <div className="loader1 "></div>
+      </div>
 
       {/* </div>
-        </div> */} 
+        </div> */}
 
 
 

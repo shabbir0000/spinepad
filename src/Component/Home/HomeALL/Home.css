@@ -316,7 +316,7 @@
       height: 160px;
       /* display: grid; */
       /* grid-column: 3/4; */
-      animation: spin 6s linear infinite;
+      animation: spin 3s linear infinite;
       top:-100%; right:-100%; left:-100%; bottom:-100%;
       margin:auto;
       z-index:0;
@@ -326,8 +326,8 @@
     
     @keyframes spin {
       0% { transform: rotate(0deg); }
-      50% { transform: rotate(180deg); }
-      75% { transform: rotate(240deg); }
+      /* 50% { transform: rotate(180deg); }
+      75% { transform: rotate(240deg); } */
       100% { transform: rotate(360deg); }
     }
 
@@ -357,7 +357,20 @@
       grid-template-columns: 10rem 2fr 2fr 2fr 10rem;
       
     }
+ 
+    @media (max-width: 1024px) { 
+          .loader{
+            display: none;
+          }
 
+          .about-div,
+          .system-div{
+            display: grid;
+            grid-template-columns: 10rem 2fr 10rem;
+          }
+
+         
+    }
     
 
 
